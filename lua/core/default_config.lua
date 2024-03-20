@@ -50,14 +50,7 @@ M.ui = {
    nvdash = {
       load_on_startup = false,
 
-      header = {
-         "                               ",
-         "                   ▄ ▄▄▄ ▄ ▄   ",
-         "               ▄▄▄ █ █▄█ █ █   ",
-         "               █▄█▄█▄▄█▄▄█ █     ",
-         "  ▄  ▄  ▄  ▄ ▄ ▄█ ▄▄ ▄▄ ▄  ▄  ",
-      },
-
+      header = {},
       buttons = {
          { "  Find File", "Spc f f", "Telescope find_files" },
          { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
