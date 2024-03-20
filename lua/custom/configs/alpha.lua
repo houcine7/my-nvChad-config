@@ -3,16 +3,8 @@ if not status_ok then
 	return
 end
 
-local board = {
-	[[             _       _                    _      ]],
-	[[            (_)     | |                  | |     ]],
-	[[ _ __   ___  _  ___ | | __   ___ ___   __| | ___ ]],
-	[[| '_ \ / _ \| |/ _ \| |/ /  / __/ _ \ / _` |/ _ \]],
-	[[| |_) | (_) | | (_) |   <  | (_| (_) | (_| |  __/]],
-	[[| .__/ \___/| |\___/|_|\_\  \___\___/ \__,_|\___|]],
-	[[| |        _/ |                                  ]],
-	[[|_|       |__/                                   ]],
-}
+local board = {}
+
 
 local data_exists, custom_dasboard = pcall(require, "core.config")
 if data_exists then
