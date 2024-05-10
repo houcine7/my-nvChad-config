@@ -121,7 +121,7 @@ config["on_attach"] = function(client, bufnr)
 end
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-  pattern = { "*.java" },
+  pattern = { "*.java", "*.groovy"}, -- to be checked later--
   callback = function()
     local _, _ = pcall(vim.lsp.codelens.refresh)
   end,

@@ -137,8 +137,13 @@ M.lspconfig = {
          end,
          "LSP declaration",
       },
-
-      ["gd"] = {
+       ["<C-d>"] = {
+         function()
+            vim.lsp.buf.definition()
+         end,
+         "LSP definition",
+      },
+        ["gd"] = {
          function()
             vim.lsp.buf.definition()
          end,

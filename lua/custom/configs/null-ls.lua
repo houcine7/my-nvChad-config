@@ -9,9 +9,8 @@ local b = null_ls.builtins
 local sources = {
 
   -- webdev stuff
-  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast! 
   -- so prettier works only on these filetypes
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css", "java" , "go" ,"sh","dosbatch","bat" }},
+  b.formatting.prettier.with { filetypes = { "html", "markdown", "css", "java" , "go" ,"typescript","javascript","sh","dosbatch","bat" }},
 
   -- Lua
   b.formatting.stylua,
